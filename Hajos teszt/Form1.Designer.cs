@@ -30,10 +30,10 @@
         {
             dataGridView1 = new DataGridView();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
             pictureBox1 = new PictureBox();
+            valaszGomb1 = new ValaszGomb();
+            valaszGomb2 = new ValaszGomb();
+            valaszGomb3 = new ValaszGomb();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -56,27 +56,6 @@
             label1.TabIndex = 1;
             label1.Text = "label1";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(57, 66);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(253, 23);
-            textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(57, 95);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(253, 23);
-            textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(57, 124);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(253, 23);
-            textBox3.TabIndex = 4;
-            // 
             // pictureBox1
             // 
             pictureBox1.Location = new Point(444, 41);
@@ -85,19 +64,53 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // valaszGomb1
+            // 
+            valaszGomb1.BackColor = Color.LightGray;
+            valaszGomb1.BorderStyle = BorderStyle.None;
+            valaszGomb1.Location = new Point(72, 56);
+            valaszGomb1.Multiline = true;
+            valaszGomb1.Name = "valaszGomb1";
+            valaszGomb1.ReadOnly = true;
+            valaszGomb1.Size = new Size(197, 29);
+            valaszGomb1.TabIndex = 6;
+            // 
+            // valaszGomb2
+            // 
+            valaszGomb2.BackColor = Color.LightGray;
+            valaszGomb2.BorderStyle = BorderStyle.None;
+            valaszGomb2.Location = new Point(72, 91);
+            valaszGomb2.Multiline = true;
+            valaszGomb2.Name = "valaszGomb2";
+            valaszGomb2.ReadOnly = true;
+            valaszGomb2.Size = new Size(197, 29);
+            valaszGomb2.TabIndex = 7;
+            // 
+            // valaszGomb3
+            // 
+            valaszGomb3.BackColor = Color.LightGray;
+            valaszGomb3.BorderStyle = BorderStyle.None;
+            valaszGomb3.Location = new Point(72, 126);
+            valaszGomb3.Multiline = true;
+            valaszGomb3.Name = "valaszGomb3";
+            valaszGomb3.ReadOnly = true;
+            valaszGomb3.Size = new Size(197, 29);
+            valaszGomb3.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(valaszGomb3);
+            Controls.Add(valaszGomb2);
+            Controls.Add(valaszGomb1);
             Controls.Add(pictureBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -108,9 +121,9 @@
 
         private DataGridView dataGridView1;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
         private PictureBox pictureBox1;
+        private ValaszGomb valaszGomb1;
+        private ValaszGomb valaszGomb2;
+        private ValaszGomb valaszGomb3;
     }
 }

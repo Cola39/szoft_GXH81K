@@ -42,17 +42,37 @@ namespace Hajos_teszt
             sr.Close();
             return kerdesek;
         }
-        public void Form1_Load(object sender, EventArgs e)
+
+        private void Form1_Load_1(object sender, EventArgs e)
         {
             AktivKerdesek = new List<Kerdes>();
             OsszesKerdesek = KerdesBeolvasas();
 
             for (int i = 0; i < 7; i++)
             {
-                AktivKerdesek.Add(OsszesKerdesek[i]);
+                AktivKerdesek.Add(OsszesKerdesek[0]);
                 OsszesKerdesek.RemoveAt(0);
             }
             dataGridView1.DataSource = AktivKerdesek;
+
+            KerdesMegjelenites(AktivKerdesek[3]);
+        }
+        void KerdesMegjelenites(Kerdes kerdes)
+        {
+            label1.Text = kerdes.KerdesSzoveg;
+            valaszGomb1.Text = kerdes.Valasz1;
+            valaszGomb2.Text = kerdes.Valasz2;
+            valaszGomb3.Text = kerdes.Valasz3;
+
+            if (!string.IsNullOrEmpty(kerdes.URL))
+            {
+                pictureBox1.Load("https://storage.altinum.hu/hajo/" + kerdes.URL);
+                pictureBox1.Visible = true;
+            }
+            else
+            {
+                pictureBox1.Visible = false;
+            }
         }
     }
 }

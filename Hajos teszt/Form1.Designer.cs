@@ -34,6 +34,7 @@
             valaszGomb1 = new ValaszGomb();
             valaszGomb2 = new ValaszGomb();
             valaszGomb3 = new ValaszGomb();
+            kovetkezo = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -41,10 +42,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(210, 184);
+            dataGridView1.Location = new Point(12, 194);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(558, 244);
+            dataGridView1.Size = new Size(776, 244);
             dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -58,9 +59,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(444, 41);
+            pictureBox1.Location = new Point(377, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(231, 95);
+            pictureBox1.Size = new Size(411, 176);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -97,11 +98,22 @@
             valaszGomb3.Size = new Size(197, 29);
             valaszGomb3.TabIndex = 8;
             // 
+            // kovetkezo
+            // 
+            kovetkezo.Location = new Point(312, 157);
+            kovetkezo.Name = "kovetkezo";
+            kovetkezo.Size = new Size(59, 31);
+            kovetkezo.TabIndex = 9;
+            kovetkezo.Text = "-->";
+            kovetkezo.UseVisualStyleBackColor = true;
+            kovetkezo.Click += kovetkezo_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(kovetkezo);
             Controls.Add(valaszGomb3);
             Controls.Add(valaszGomb2);
             Controls.Add(valaszGomb1);
@@ -125,5 +137,6 @@
         private ValaszGomb valaszGomb1;
         private ValaszGomb valaszGomb2;
         private ValaszGomb valaszGomb3;
+        private Button kovetkezo;
     }
 }

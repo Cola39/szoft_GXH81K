@@ -50,12 +50,12 @@ namespace Hajos_teszt
 
             for (int i = 0; i < 7; i++)
             {
-                AktivKerdesek.Add(OsszesKerdesek[0]);
+                AktivKerdesek.Add(OsszesKerdesek[i]);
                 OsszesKerdesek.RemoveAt(0);
             }
             dataGridView1.DataSource = AktivKerdesek;
+            KerdesMegjelenites(AktivKerdesek[0]);
 
-            KerdesMegjelenites(AktivKerdesek[3]);
         }
         void KerdesMegjelenites(Kerdes kerdes)
         {
@@ -73,6 +73,18 @@ namespace Hajos_teszt
             {
                 pictureBox1.Visible = false;
             }
+        }
+
+        int szam = 1;
+        private void kovetkezo_Click(object sender, EventArgs e)
+        {
+            KerdesMegjelenites(AktivKerdesek[szam]);
+            szam++;
+            if (szam == 7) szam = 0;
+
+            valaszGomb1.BackColor = Color.LightGray;
+            valaszGomb2.BackColor = Color.LightGray;
+            valaszGomb3.BackColor = Color.LightGray;
         }
     }
 }

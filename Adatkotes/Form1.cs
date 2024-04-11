@@ -39,11 +39,7 @@ namespace Adatkotes
 
         private void buttonTorles_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Biztos?", "Törlés", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                countryDataBindingSource.RemoveCurrent();
-            }
+            countryDataBindingSource.RemoveCurrent();
         }
 
         private void buttonSzerkesztes_Click(object sender, EventArgs e)
@@ -55,11 +51,15 @@ namespace Adatkotes
 
         private void buttonMentes_Click(object sender, EventArgs e)
         {
-            using (var writer = new StreamWriter("european_countries.csv"))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+            DialogResult dialogResult = MessageBox.Show("Biztos?", "Törlés", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                csv.WriteRecords(countryList);
-            };
+                using (var writer = new StreamWriter("european_countries.csv"))
+                using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+                {
+                    csv.WriteRecords(countryList);
+                };
+            }
         }
     }
 }

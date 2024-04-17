@@ -31,9 +31,6 @@
             dataGridView1 = new DataGridView();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            valaszGomb1 = new ValaszGomb();
-            valaszGomb2 = new ValaszGomb();
-            valaszGomb3 = new ValaszGomb();
             kovetkezo = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -42,67 +39,38 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 194);
+            dataGridView1.Location = new Point(14, 322);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(776, 244);
+            dataGridView1.Size = new Size(1298, 310);
             dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(48, 25);
+            label1.Location = new Point(14, 13);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 1;
             label1.Text = "label1";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(377, 12);
+            pictureBox1.Location = new Point(842, 13);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(411, 176);
+            pictureBox1.Size = new Size(470, 301);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // valaszGomb1
-            // 
-            valaszGomb1.BackColor = Color.LightGray;
-            valaszGomb1.BorderStyle = BorderStyle.None;
-            valaszGomb1.Location = new Point(72, 56);
-            valaszGomb1.Multiline = true;
-            valaszGomb1.Name = "valaszGomb1";
-            valaszGomb1.ReadOnly = true;
-            valaszGomb1.Size = new Size(197, 29);
-            valaszGomb1.TabIndex = 6;
-            // 
-            // valaszGomb2
-            // 
-            valaszGomb2.BackColor = Color.LightGray;
-            valaszGomb2.BorderStyle = BorderStyle.None;
-            valaszGomb2.Location = new Point(72, 91);
-            valaszGomb2.Multiline = true;
-            valaszGomb2.Name = "valaszGomb2";
-            valaszGomb2.ReadOnly = true;
-            valaszGomb2.Size = new Size(197, 29);
-            valaszGomb2.TabIndex = 7;
-            // 
-            // valaszGomb3
-            // 
-            valaszGomb3.BackColor = Color.LightGray;
-            valaszGomb3.BorderStyle = BorderStyle.None;
-            valaszGomb3.Location = new Point(72, 126);
-            valaszGomb3.Multiline = true;
-            valaszGomb3.Name = "valaszGomb3";
-            valaszGomb3.ReadOnly = true;
-            valaszGomb3.Size = new Size(197, 29);
-            valaszGomb3.TabIndex = 8;
-            // 
             // kovetkezo
             // 
-            kovetkezo.Location = new Point(312, 157);
+            kovetkezo.Location = new Point(709, 273);
+            kovetkezo.Margin = new Padding(3, 4, 3, 4);
             kovetkezo.Name = "kovetkezo";
-            kovetkezo.Size = new Size(59, 31);
+            kovetkezo.Size = new Size(67, 41);
             kovetkezo.TabIndex = 9;
             kovetkezo.Text = "-->";
             kovetkezo.UseVisualStyleBackColor = true;
@@ -110,16 +78,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1324, 645);
             Controls.Add(kovetkezo);
-            Controls.Add(valaszGomb3);
-            Controls.Add(valaszGomb2);
-            Controls.Add(valaszGomb1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load_1;

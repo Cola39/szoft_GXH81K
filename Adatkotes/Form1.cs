@@ -51,7 +51,7 @@ namespace Adatkotes
 
         private void buttonMentes_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Biztos?", "Törlés", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Biztos?", "Mentés", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 using (var writer = new StreamWriter("european_countries.csv"))

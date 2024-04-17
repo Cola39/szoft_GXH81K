@@ -1,4 +1,4 @@
-namespace Hajos_teszt
+namespace MintaZH2
 {
     internal static class Program
     {

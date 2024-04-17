@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.populationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.areaInSquareKmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonSzerkesztes = new System.Windows.Forms.Button();
             this.buttonTorles = new System.Windows.Forms.Button();
             this.buttonMegnyitas = new System.Windows.Forms.Button();
             this.buttonMentes = new System.Windows.Forms.Button();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.populationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.areaInSquareKmDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.countryDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countryDataBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -51,10 +51,55 @@
             this.populationDataGridViewTextBoxColumn,
             this.areaInSquareKmDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.countryDataBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 53);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(750, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(569, 442);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // buttonSzerkesztes
+            // 
+            this.buttonSzerkesztes.Location = new System.Drawing.Point(411, 503);
+            this.buttonSzerkesztes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSzerkesztes.Name = "buttonSzerkesztes";
+            this.buttonSzerkesztes.Size = new System.Drawing.Size(171, 32);
+            this.buttonSzerkesztes.TabIndex = 1;
+            this.buttonSzerkesztes.Text = "Szerkesztés";
+            this.buttonSzerkesztes.UseVisualStyleBackColor = true;
+            this.buttonSzerkesztes.Click += new System.EventHandler(this.buttonSzerkesztes_Click);
+            // 
+            // buttonTorles
+            // 
+            this.buttonTorles.Location = new System.Drawing.Point(13, 503);
+            this.buttonTorles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonTorles.Name = "buttonTorles";
+            this.buttonTorles.Size = new System.Drawing.Size(171, 32);
+            this.buttonTorles.TabIndex = 2;
+            this.buttonTorles.Text = "Törlés";
+            this.buttonTorles.UseVisualStyleBackColor = true;
+            this.buttonTorles.Click += new System.EventHandler(this.buttonTorles_Click);
+            // 
+            // buttonMegnyitas
+            // 
+            this.buttonMegnyitas.Location = new System.Drawing.Point(411, 13);
+            this.buttonMegnyitas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonMegnyitas.Name = "buttonMegnyitas";
+            this.buttonMegnyitas.Size = new System.Drawing.Size(171, 32);
+            this.buttonMegnyitas.TabIndex = 3;
+            this.buttonMegnyitas.Text = "Megnyitás";
+            this.buttonMegnyitas.UseVisualStyleBackColor = true;
+            this.buttonMegnyitas.Click += new System.EventHandler(this.buttonMegnyitas_Click);
+            // 
+            // buttonMentes
+            // 
+            this.buttonMentes.Location = new System.Drawing.Point(13, 13);
+            this.buttonMentes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonMentes.Name = "buttonMentes";
+            this.buttonMentes.Size = new System.Drawing.Size(171, 32);
+            this.buttonMentes.TabIndex = 4;
+            this.buttonMentes.Text = "Mentés";
+            this.buttonMentes.UseVisualStyleBackColor = true;
+            this.buttonMentes.Click += new System.EventHandler(this.buttonMentes_Click);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -78,56 +123,17 @@
             // 
             this.countryDataBindingSource.DataSource = typeof(Adatkotes.CountryData);
             // 
-            // buttonSzerkesztes
-            // 
-            this.buttonSzerkesztes.Location = new System.Drawing.Point(692, 395);
-            this.buttonSzerkesztes.Name = "buttonSzerkesztes";
-            this.buttonSzerkesztes.Size = new System.Drawing.Size(83, 26);
-            this.buttonSzerkesztes.TabIndex = 1;
-            this.buttonSzerkesztes.Text = "Szerkesztés";
-            this.buttonSzerkesztes.UseVisualStyleBackColor = true;
-            this.buttonSzerkesztes.Click += new System.EventHandler(this.buttonSzerkesztes_Click);
-            // 
-            // buttonTorles
-            // 
-            this.buttonTorles.Location = new System.Drawing.Point(603, 395);
-            this.buttonTorles.Name = "buttonTorles";
-            this.buttonTorles.Size = new System.Drawing.Size(83, 26);
-            this.buttonTorles.TabIndex = 2;
-            this.buttonTorles.Text = "Törlés";
-            this.buttonTorles.UseVisualStyleBackColor = true;
-            this.buttonTorles.Click += new System.EventHandler(this.buttonTorles_Click);
-            // 
-            // buttonMegnyitas
-            // 
-            this.buttonMegnyitas.Location = new System.Drawing.Point(692, 47);
-            this.buttonMegnyitas.Name = "buttonMegnyitas";
-            this.buttonMegnyitas.Size = new System.Drawing.Size(83, 26);
-            this.buttonMegnyitas.TabIndex = 3;
-            this.buttonMegnyitas.Text = "Megnyitás";
-            this.buttonMegnyitas.UseVisualStyleBackColor = true;
-            this.buttonMegnyitas.Click += new System.EventHandler(this.buttonMegnyitas_Click);
-            // 
-            // buttonMentes
-            // 
-            this.buttonMentes.Location = new System.Drawing.Point(603, 47);
-            this.buttonMentes.Name = "buttonMentes";
-            this.buttonMentes.Size = new System.Drawing.Size(83, 26);
-            this.buttonMentes.TabIndex = 4;
-            this.buttonMentes.Text = "Mentés";
-            this.buttonMentes.UseVisualStyleBackColor = true;
-            this.buttonMentes.Click += new System.EventHandler(this.buttonMentes_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(595, 548);
             this.Controls.Add(this.buttonMentes);
             this.Controls.Add(this.buttonMegnyitas);
             this.Controls.Add(this.buttonTorles);
             this.Controls.Add(this.buttonSzerkesztes);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -1,4 +1,4 @@
-namespace gyak4
+namespace Adatkotes2
 {
     internal static class Program
     {

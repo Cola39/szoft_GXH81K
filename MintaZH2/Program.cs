@@ -1,4 +1,4 @@
-namespace gyak4
+namespace MintaZH2
 {
     internal static class Program
     {

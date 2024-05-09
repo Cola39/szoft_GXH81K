@@ -1,4 +1,4 @@
-﻿namespace Hajos_teszt
+﻿namespace HajósTeszt
 {
     partial class Form1
     {
@@ -29,39 +29,34 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            label1 = new Label();
             pictureBox1 = new PictureBox();
             valaszGomb1 = new ValaszGomb();
+            label1 = new Label();
             valaszGomb2 = new ValaszGomb();
             valaszGomb3 = new ValaszGomb();
-            kovetkezo = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 194);
+            dataGridView1.Location = new Point(10, 275);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(776, 244);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(802, 171);
             dataGridView1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(48, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(377, 12);
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            pictureBox1.Location = new Point(352, 11);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(411, 176);
+            pictureBox1.Size = new Size(460, 260);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
@@ -69,60 +64,73 @@
             // 
             valaszGomb1.BackColor = Color.LightGray;
             valaszGomb1.BorderStyle = BorderStyle.None;
-            valaszGomb1.Location = new Point(72, 56);
+            valaszGomb1.Location = new Point(10, 62);
             valaszGomb1.Multiline = true;
             valaszGomb1.Name = "valaszGomb1";
             valaszGomb1.ReadOnly = true;
-            valaszGomb1.Size = new Size(197, 29);
+            valaszGomb1.Size = new Size(336, 50);
             valaszGomb1.TabIndex = 6;
+            valaszGomb1.Click += valaszGomb1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 11);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 9;
+            label1.Text = "label1";
             // 
             // valaszGomb2
             // 
             valaszGomb2.BackColor = Color.LightGray;
             valaszGomb2.BorderStyle = BorderStyle.None;
-            valaszGomb2.Location = new Point(72, 91);
+            valaszGomb2.Location = new Point(10, 118);
             valaszGomb2.Multiline = true;
             valaszGomb2.Name = "valaszGomb2";
             valaszGomb2.ReadOnly = true;
-            valaszGomb2.Size = new Size(197, 29);
-            valaszGomb2.TabIndex = 7;
+            valaszGomb2.Size = new Size(336, 50);
+            valaszGomb2.TabIndex = 10;
+            valaszGomb2.Click += valaszGomb2_Click;
             // 
             // valaszGomb3
             // 
             valaszGomb3.BackColor = Color.LightGray;
             valaszGomb3.BorderStyle = BorderStyle.None;
-            valaszGomb3.Location = new Point(72, 126);
+            valaszGomb3.Location = new Point(10, 174);
             valaszGomb3.Multiline = true;
             valaszGomb3.Name = "valaszGomb3";
             valaszGomb3.ReadOnly = true;
-            valaszGomb3.Size = new Size(197, 29);
-            valaszGomb3.TabIndex = 8;
+            valaszGomb3.Size = new Size(336, 50);
+            valaszGomb3.TabIndex = 11;
+            valaszGomb3.Click += valaszGomb3_Click;
             // 
-            // kovetkezo
+            // button1
             // 
-            kovetkezo.Location = new Point(312, 157);
-            kovetkezo.Name = "kovetkezo";
-            kovetkezo.Size = new Size(59, 31);
-            kovetkezo.TabIndex = 9;
-            kovetkezo.Text = "-->";
-            kovetkezo.UseVisualStyleBackColor = true;
-            kovetkezo.Click += kovetkezo_Click;
+            button1.Location = new Point(195, 239);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 31);
+            button1.TabIndex = 12;
+            button1.Text = "Következő";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(kovetkezo);
+            ClientSize = new Size(822, 455);
+            Controls.Add(button1);
             Controls.Add(valaszGomb3);
             Controls.Add(valaszGomb2);
+            Controls.Add(label1);
             Controls.Add(valaszGomb1);
             Controls.Add(pictureBox1);
-            Controls.Add(label1);
             Controls.Add(dataGridView1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load_1;
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -132,11 +140,11 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Label label1;
         private PictureBox pictureBox1;
         private ValaszGomb valaszGomb1;
+        private Label label1;
         private ValaszGomb valaszGomb2;
         private ValaszGomb valaszGomb3;
-        private Button kovetkezo;
+        private Button button1;
     }
 }

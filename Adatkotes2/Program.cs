@@ -1,4 +1,4 @@
-namespace szoft_ABCDEF
+namespace Adatkotes2
 {
     internal static class Program
     {

@@ -1,4 +1,4 @@
-namespace Hajos_teszt
+namespace HajósTeszt
 {
     internal static class Program
     {

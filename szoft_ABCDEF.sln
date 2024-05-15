@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HajósTeszt", "HajósTeszt\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adatkotes2", "Adatkotes2\Adatkotes2.csproj", "{C3E53D3D-4082-486C-B236-9CF797C15C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MintaZH2", "MintaZH2\MintaZH2.csproj", "{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MintaZH2", "MintaZH2\MintaZH2.csproj", "{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +63,18 @@ Global
 		{7C717EB1-B3EE-4EF0-BE4D-D839BD4D371E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C717EB1-B3EE-4EF0-BE4D-D839BD4D371E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C717EB1-B3EE-4EF0-BE4D-D839BD4D371E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62BB029D-1E39-4B44-B2BC-62C004D27521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62BB029D-1E39-4B44-B2BC-62C004D27521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62BB029D-1E39-4B44-B2BC-62C004D27521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62BB029D-1E39-4B44-B2BC-62C004D27521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E53D3D-4082-486C-B236-9CF797C15C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E53D3D-4082-486C-B236-9CF797C15C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E53D3D-4082-486C-B236-9CF797C15C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E53D3D-4082-486C-B236-9CF797C15C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FF16C3-CEF9-4DE6-BA2E-F3D207A9856C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
